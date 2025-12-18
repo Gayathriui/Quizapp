@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container" id="quizBox">
+    <h1>🧠 Tech Quiz</h1>
+
+    <div class="header">
+        <span>⏱ <b id="timer">10</b>s</span>
+        <span>⭐ Score: <b id="score">0</b></span>
+    </div>
+
+    <h2 id="question">Question appears here</h2>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(0)"></button>
+        <button class="option" onclick="checkAnswer(1)"></button>
+        <button class="option" onclick="checkAnswer(2)"></button>
+        <button class="option" onclick="checkAnswer(3)"></button>
+    </div>
+</div>
+
+<div class="result-container" id="resultBox">
+    <h1>🎉 Quiz Finished</h1>
+    <p id="finalScore"></p>
+    <p>🏆 High Score: <b id="highScore"></b></p>
+    <button onclick="restartQuiz()">Play Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
